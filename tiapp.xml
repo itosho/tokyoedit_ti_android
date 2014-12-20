@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <property name="ti.android.bug2373.finishfalseroot" type="bool">true</property>
+    <property name="acs-oauth-secret-production" type="string">3yMnvZOpz2L1Wr0gVV5XBVg0ncvld88t</property>
+    <property name="acs-oauth-key-production" type="string">9vANHbDp6MPkH3nRjWGeMUbwOG2ZwUK1</property>
+    <property name="acs-api-key-production" type="string">QwngPBEA6OfpI1x2FW8Z2JGyGAFnWDN3</property>
+    <property name="acs-oauth-secret-development" type="string">j2omsZm2OinDIoDYi9K3R7EZlyShT367</property>
+    <property name="acs-oauth-key-development" type="string">jhpZ4WFw0KGO30dW6LZph9aOP3yc6ie4</property>
+    <property name="acs-api-key-development" type="string">M5OJKfiDHOMEC1Q3sJ9nL2HynuTcIYBD</property>
+    <deployment-targets>
+        <target device="tizen">false</target>
+        <target device="mobileweb">false</target>
+        <target device="iphone">false</target>
+        <target device="ipad">false</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>3.1.3.GA</sdk-version>
+    <id>itosho.android.tokyoedit</id>
+    <name>Tokyo Edit</name>
+    <version>1.0.1</version>
+    <publisher>itosho</publisher>
+    <url>http://www.tokyoedit.com/</url>
+    <description>『Tokyo Edit』は"日常に潜むパラレルワールド"というコンセプトをもとにつくられた地下の世界と地上の世界とを繋げるモバイルコンテンツです。 暗い地下鉄の車窓からぼんやりと映し出されるもう一つの世界を体験してください。</description>
+    <copyright>2013 by itosho</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>34a0b774-6aaf-445c-8322-7b8a1b3d0064</guid>
+    <property name="ti.ui.defaultunit">system</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest android:installLocation="auto" android:versionCode="2" android:versionName="1.0.1">
+            <uses-sdk android:minSdkVersion="8"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <modules>
+        <module platform="commonjs" version="2.3.0">ti.cloud</module>
+    </modules>
+</ti:app>
